@@ -23,3 +23,22 @@ function typeEffect() {
 setInterval(typeEffect,2000);
 
 typeEffect();
+
+function openVideoModal() {
+    const modal = document.getElementById('videoModal');
+    if (modal) {
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+    }
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    if (modal) {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+    }
+}
+
+window.openVideoModal = openVideoModal;
+window.closeVideoModal = closeVideoModal;
