@@ -12,6 +12,9 @@ html{
 body{
     background:#0d1117;
     color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+    line-height:1.6;
 }
 
 nav{
@@ -21,27 +24,39 @@ nav{
     background:#161b22;
     display:flex;
     justify-content:space-between;
+    align-items:center;
     padding:20px 60px;
     z-index:1000;
+    gap:16px;
+}
+
+nav .logo{
+    font-weight:700;
+    letter-spacing:0.02em;
+    white-space:nowrap;
 }
 
 nav ul{
     display:flex;
     gap:30px;
     list-style:none;
+    flex-wrap:wrap;
+    justify-content:flex-end;
 }
 
 nav a{
     color:white;
     text-decoration:none;
+    font-size:0.95rem;
 }
 
 header{
-    height:100vh;
+    min-height:100svh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
+    padding:120px 20px 80px;
     background:linear-gradient(
         135deg,
         #0d1117,
@@ -50,12 +65,19 @@ header{
 }
 
 .hero-content h1{
-    font-size:4rem;
+    font-size:clamp(2.4rem, 4vw, 4rem);
 }
 
 .hero-content h2{
     color:#00d4ff;
     margin:20px 0;
+    font-size:clamp(1.1rem, 2.2vw, 1.7rem);
+}
+
+.hero-content p{
+    font-size:clamp(1rem, 1.8vw, 1.1rem);
+    max-width:720px;
+    margin:0 auto;
 }
 
 .btn{
@@ -70,7 +92,7 @@ header{
 }
 
 section{
-    padding:100px 10%;
+    padding:100px clamp(20px, 6vw, 10%);
 }
 
 h2{
@@ -141,11 +163,12 @@ h2{
 
 .project-card .drive-video-preview {
     width:100%;
-    height:400px;
-    min-height:400px;
+    height:min(60vh, 400px);
+    min-height:220px;
     border:none;
     display:block;
     background:#0f172a;
+    aspect-ratio:16 / 9;
 }
 
 .fullscreen-btn {
@@ -164,19 +187,58 @@ h2{
     align-items:center;
     gap:8px;
     box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    font-size:0.95rem;
 }
 
 .fullscreen-btn:hover {
     transform:scale(1.03);
 }
 
-.video-shell:fullscreen {
-    background:#000;
+.video-modal {
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.85);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+    z-index:2000;
 }
 
-.video-shell:fullscreen .drive-video-preview {
+.video-modal.active {
+    display:flex;
+}
+
+.video-modal-content {
+    position:relative;
+    width:min(95vw, 1100px);
+    height:min(85vh, 700px);
+    background:#000;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,0.45);
+}
+
+.video-modal-close {
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index:2;
+    border:none;
+    border-radius:999px;
+    width:42px;
+    height:42px;
+    background:rgba(255,255,255,0.9);
+    color:#000;
+    cursor:pointer;
+    font-size:1.1rem;
+}
+
+.video-modal-iframe {
+    width:100%;
     height:100%;
-    min-height:100vh;
+    border:none;
+    background:#000;
 }
 
 .video-grid{
@@ -200,11 +262,11 @@ video{
     }
 
     header {
-        padding: 60px 20px;
+        padding: 90px 20px 70px;
     }
 
     section {
-        padding: 80px 8%;
+        padding: 80px 6%;
     }
 }
 
@@ -218,16 +280,17 @@ video{
     nav ul {
         flex-wrap: wrap;
         justify-content:center;
-        gap:15px;
+        gap:10px 15px;
+        width:100%;
     }
 
     header {
         min-height: auto;
-        padding: 70px 18px 50px;
+        padding: 100px 18px 60px;
     }
 
     .hero-content h1 {
-        font-size:3rem;
+        font-size:clamp(2.1rem, 5.5vw, 3rem);
     }
 
     .hero-content h2 {
@@ -235,7 +298,7 @@ video{
     }
 
     section {
-        padding: 60px 6%;
+        padding: 60px 5%;
     }
 
     .gallery,
@@ -256,11 +319,24 @@ video{
     .project-card img {
         height:auto;
     }
+
+    .video-modal-content {
+        width:min(96vw, 100%);
+        height:min(80vh, 520px);
+    }
 }
 
 @media (max-width: 540px) {
     nav {
         padding:14px 16px;
+    }
+
+    nav ul {
+        gap:8px 12px;
+    }
+
+    nav a {
+        font-size:0.9rem;
     }
 
     .btn,
@@ -274,7 +350,11 @@ video{
     }
 
     .hero-content h1 {
-        font-size:2.6rem;
+        font-size:2.2rem;
+    }
+
+    .hero-content h2 {
+        font-size:1.05rem;
     }
 
     .gallery iframe,
@@ -282,6 +362,21 @@ video{
     .video-grid iframe,
     .video-grid video {
         min-height:200px;
+    }
+
+    .fullscreen-btn {
+        padding:7px 10px;
+        font-size:0.85rem;
+        right:8px;
+        top:8px;
+    }
+
+    .video-modal {
+        padding:10px;
+    }
+
+    .video-modal-content {
+        height:70vh;
     }
 }
 
