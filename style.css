@@ -131,6 +131,16 @@ h2{
     box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
 
+.project-card .drive-video-preview {
+    width:100%;
+    aspect-ratio:16 / 9;
+    min-height:180px;
+    margin-top:15px;
+    border:none;
+    border-radius:12px;
+    background:#0f172a;
+}
+
 .video-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
