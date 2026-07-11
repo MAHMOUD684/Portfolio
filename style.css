@@ -364,11 +364,22 @@ video{
         min-height:200px;
     }
 
+    .video-shell {
+        background:transparent;
+        margin-top:12px;
+    }
+
+    .project-card .drive-video-preview {
+        display:none;
+    }
+
     .fullscreen-btn {
-        padding:7px 10px;
-        font-size:0.85rem;
-        right:8px;
-        top:8px;
+        position:static;
+        padding:10px 14px;
+        font-size:0.9rem;
+        margin-top:0;
+        width:100%;
+        justify-content:center;
     }
 
     .video-modal {
