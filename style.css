@@ -133,8 +133,8 @@ h2{
 
 .project-card .drive-video-preview {
     width:100%;
-    aspect-ratio:16 / 9;
-    min-height:180px;
+    height:280px;
+    min-height:280px;
     margin-top:15px;
     border:none;
     border-radius:12px;
