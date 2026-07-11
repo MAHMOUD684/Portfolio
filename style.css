@@ -164,7 +164,7 @@ h2{
 .project-card .drive-video-preview {
     width:100%;
     height:min(60vh, 400px);
-    min-height:220px;
+    min-height:600px;
     border:none;
     display:block;
     background:#0f172a;
