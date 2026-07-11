@@ -146,15 +146,37 @@
         <div class="project-card">
             <h3>Dynamo Support Placement</h3>
             <p>
-                Automatic support placement and coordination tool.
+                Automatic support placement.
             </p>
-            <iframe class="drive-video-preview"
-                src="https://drive.google.com/file/d/1PYsD8beHwv9koXBpboBAKp9Xw0yVokFU/preview"
-                allow="autoplay"
-                allowfullscreen
-                loading="lazy"
-                title="Dynamo Support Placement video preview">
-            </iframe>
+            <div class="video-shell">
+                <iframe class="drive-video-preview"
+                    src="https://drive.google.com/file/d/1PYsD8beHwv9koXBpboBAKp9Xw0yVokFU/preview"
+                    allow="autoplay"
+                    allowfullscreen
+                    loading="lazy"
+                    title="Dynamo Support Placement video preview">
+                </iframe>
+                <button class="fullscreen-btn" type="button" onclick="openVideoModal()" aria-label="Open video in full screen">
+                    <i class="fa-solid fa-expand"></i>
+                    Full Screen
+                </button>
+            </div>
+
+            <div id="videoModal" class="video-modal" aria-hidden="true">
+                <div class="video-modal-content">
+                    <button class="video-modal-close" type="button" onclick="closeVideoModal()" aria-label="Close video viewer">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <iframe
+                        class="video-modal-iframe"
+                        src="https://drive.google.com/file/d/1PYsD8beHwv9koXBpboBAKp9Xw0yVokFU/preview"
+                        allow="autoplay; fullscreen"
+                        allowfullscreen
+                        loading="lazy"
+                        title="Dynamo Support Placement video viewer">
+                    </iframe>
+                </div>
+            </div>
         </div>
 
         <div class="project-card">
