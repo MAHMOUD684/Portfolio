@@ -1,81 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahmoud Magdy | MEP & BIM Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahmoud Magdy | MEP & BIM Engineer</title>
+<meta name="description" content="Mahmoud Magdy — MEP Technical Office & BIM Engineer with 7+ years across infrastructure, high-rise, industrial and treatment-plant projects. Revit MEP, Revit API, Dynamo & Python automation.">
+<meta name="theme-color" content="#0a1a2e">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
-    <link rel="stylesheet" href="style.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mahmoud Magdy | MEP & BIM Engineer">
+<meta property="og:description" content="MEP Technical Office & BIM Engineer — Revit MEP, Revit API, Dynamo & Python automation. 7+ years across infrastructure, high-rise, industrial and treatment-plant projects.">
+<meta property="og:image" content="assets/images/Rivage.jpg">
+<meta name="twitter:card" content="summary_large_image">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-<nav>
-    <div class="logo">Mahmoud Magdy</div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <ul>
+<nav>
+    <a class="logo" href="#top" aria-label="Back to top">
+        <span class="logo-mark">MM</span>
+        <span class="logo-text">Mahmoud Magdy</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul id="primaryNav">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#addinsSamples">Add-ins & Automation</a></li>
+        <li><a href="#project">Featured Project</a></li>
+        <li><a href="#addins">Add-ins</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#videos">Videos</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#WorkSampels">Sampels</a></li>
     </ul>
 </nav>
 
-<header>
+<header id="top">
 
-    <div class="hero-content">
+    <div class="hero-inner">
 
-        <h1>Mahmoud Magdy</h1>
+        <div class="hero-content">
+            <span class="eyebrow">MEP + BIM &middot; TECHNICAL OFFICE</span>
+            <h1>Mahmoud Magdy</h1>
+            <h2><span id="typing" aria-live="polite"></span><span class="cursor" aria-hidden="true"></span></h2>
 
-        <h2 id="typing"></h2>
+            <p>
+                MEP Technical Office and BIM Engineer with 7+ years of experience delivering
+                infrastructure, high-rise, industrial, and treatment plant projects — BIM coordination,
+                Revit automation, Dynamo, Revit API (C#), and Python.
+            </p>
 
-        <p>
-            MEP Technical Office Engineer | BIM Engineer | Revit API Developer
-        </p>
+            <div class="hero-actions">
+                <a href="Mahmoud-Magdy_MEP_CV.PDF" class="btn btn-primary">
+                    <i class="fa-solid fa-file-arrow-down"></i> Download CV
+                </a>
+                <a href="#contact" class="btn btn-ghost">
+                    <i class="fa-solid fa-paper-plane"></i> Get in touch
+                </a>
+            </div>
+        </div>
 
-        <a href="Mahmoud-Magdy_MEP_CV.PDF" class="btn">
-            Download CV
-        </a>
+        <div class="fact-panel" role="note" aria-label="Profile summary">
+            <div class="fact-panel-head">At a glance</div>
+            <div class="fact-grid">
+                <div class="fact-cell">
+                    <span>Name</span>
+                    <strong>Mahmoud Magdy</strong>
+                </div>
+                <div class="fact-cell">
+                    <span>Discipline</span>
+                    <strong>MEP / BIM</strong>
+                </div>
+                <div class="fact-cell">
+                    <span>Experience</span>
+                    <strong>7+ Years</strong>
+                </div>
+                <div class="fact-cell">
+                    <span>Core Stack</span>
+                    <strong>Revit &middot; Dynamo</strong>
+                </div>
+                <div class="fact-cell">
+                    <span>Specialty</span>
+                    <strong>Revit API (C#)</strong>
+                </div>
+                <div class="fact-cell">
+                    <span>Status</span>
+                    <strong>Open to Opportunities</strong>
+                </div>
+            </div>
+        </div>
 
     </div>
 
+    <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
+        <i class="fa-solid fa-chevron-down"></i>
+    </a>
+
 </header>
 
+<main id="main">
+
 <section id="about">
+    <div class="section-heading">
+        <span class="section-number">01</span>
+        <h2>About Me</h2>
+    </div>
+    <div class="section-rule"></div>
 
-    <h2>About Me</h2>
-
-    <p>
+    <p class="lead">
         MEP Technical Office and BIM Engineer with 7+ years of experience delivering infrastructure,
         high-rise, industrial, and treatment plant projects. Experienced in BIM coordination,
         Revit automation, Dynamo, Revit API C#, and Python development.
     </p>
 
+    <div class="stat-strip">
+        <div class="stat"><strong>7+</strong><span>Years experience</span></div>
+        <div class="stat"><strong>4</strong><span>Major project types</span></div>
+        <div class="stat"><strong>3</strong><span>Custom Revit tools built</span></div>
+    </div>
 </section>
 
 <section id="skills">
-
-    <h2>Skills</h2>
+    <div class="section-heading">
+        <span class="section-number">02</span>
+        <h2>Skills</h2>
+    </div>
+    <div class="section-rule"></div>
 
     <div class="skills-grid">
 
         <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
             <h3>BIM</h3>
             <ul>
                 <li>Revit MEP</li>
                 <li>Navisworks</li>
-                <li>ACC</li>
+                <li>Autodesk Construction Cloud (ACC)</li>
                 <li>BIM 360</li>
             </ul>
         </div>
 
         <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-code"></i></div>
             <h3>Programming</h3>
             <ul>
                 <li>C#</li>
@@ -86,97 +164,191 @@
         </div>
 
         <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
             <h3>Design</h3>
             <ul>
                 <li>Fire Fighting</li>
                 <li>Plumbing</li>
                 <li>Hydraulic Calculations</li>
-                
             </ul>
+
+            <figure class="detail-sample">
+                <img src="assets/images/halfmoon-drain.png" alt="Half-moon floor drain detail, sample drawing output" loading="lazy">
+                <figcaption>Sample detail &mdash; half-moon floor drain</figcaption>
+            </figure>
         </div>
 
     </div>
-
 </section>
 
 <section id="experience">
-
-    <h2>Experience</h2>
+    <div class="section-heading">
+        <span class="section-number">03</span>
+        <h2>Experience</h2>
+    </div>
+    <div class="section-rule"></div>
 
     <div class="timeline">
 
         <div class="timeline-item">
-            <h3>A&M International</h3>
-            <span>2025 - Present</span>
-            <p>MEP Technical Office & BIM Engineer</p>
+            <span class="timeline-dates">2025 &ndash; Present</span>
+            <h3>A&amp;M International</h3>
+            <p>MEP Technical Office &amp; BIM Engineer</p>
         </div>
 
         <div class="timeline-item">
-            <h3>Arab Contractors - High Speed Rail</h3>
-            <span>2024 - 2025</span>
+            <span class="timeline-dates">2024 &ndash; 2025</span>
+            <h3>Arab Contractors &mdash; High Speed Rail</h3>
         </div>
 
         <div class="timeline-item">
+            <span class="timeline-dates">2023 &ndash; 2024</span>
             <h3>New Alamein Towers</h3>
-            <span>2023 - 2024</span>
         </div>
 
         <div class="timeline-item">
+            <span class="timeline-dates">2021 &ndash; 2023</span>
             <h3>Bahr El Baqar Treatment Plant</h3>
-            <span>2021 - 2023</span>
         </div>
 
     </div>
-
 </section>
 
-<section id="addinsSamples">
+<section id="project">
+    <div class="section-heading">
+        <span class="section-number">04</span>
+        <h2>Featured Project</h2>
+    </div>
+    <div class="section-rule"></div>
 
-    <h2>Add-ins & Automation</h2>
+    <div class="feature-project">
+
+        <div class="project-image">
+            <img src="assets/images/Rivage.jpg" alt="Rivage Residential Tower rendering" loading="lazy">
+            <div class="project-badge">BIM PROJECT</div>
+        </div>
+
+        <div class="project-content">
+            <h3>Rivage Residential Tower</h3>
+            <p class="project-subtitle">MEP Technical Office &amp; BIM Coordination</p>
+
+            <p class="project-description">
+                Residential high-rise tower project involving BIM coordination, shop drawings,
+                consultant coordination, clash detection, material submittals and technical
+                office management.
+            </p>
+
+            <div class="project-info">
+                <div class="info-item"><span>Discipline</span><strong>MEP</strong></div>
+                <div class="info-item"><span>Tools</span><strong>Revit + Navisworks</strong></div>
+                <div class="info-item"><span>Type</span><strong>Residential Tower</strong></div>
+            </div>
+        </div>
+
+        <div class="model-list">
+
+            <div class="model-item">
+                <div class="model-item-text">
+                    <h4>Lower Ground Floor &mdash; Federated Model</h4>
+                    <p>Full federated model for the lower ground floor level.</p>
+                </div>
+                <div class="model-item-actions">
+                    <a href="https://autode.sk/4y2QYGS" target="_blank" rel="noopener" class="btn btn-viewer">
+                        <i class="fa-solid fa-cube"></i> View 3D Model
+                    </a>
+                    <a href="https://github.com/MAHMOUD684/Portfolio-Models/releases/download/V1/Lower.Ground.Floor-.Federated.Model.nwd" target="_blank" rel="noopener" class="btn btn-download">
+                        <i class="fa-solid fa-download"></i> Download NWD
+                    </a>
+                </div>
+            </div>
+
+            <div class="model-item">
+                <div class="model-item-text">
+                    <h4>1BR Apartment &mdash; Type C</h4>
+                    <p>Unit-level MEP coordination sample.</p>
+                </div>
+                <div class="model-item-actions">
+                    <a href="https://autode.sk/4uZKu8Z" target="_blank" rel="noopener" class="btn btn-viewer">
+                        <i class="fa-solid fa-cube"></i> View 3D Model
+                    </a>
+                    <a href="https://github.com/MAHMOUD684/Portfolio-Models/releases/download/V1/1BR-T1C.nwd" target="_blank" rel="noopener" class="btn btn-download">
+                        <i class="fa-solid fa-download"></i> Download NWD
+                    </a>
+                </div>
+            </div>
+
+            <div class="model-item model-item-progress">
+                <div class="model-item-text">
+                    <h4>Browser-based BIM Viewer <span class="pill">In Development</span></h4>
+                    <p>Custom web viewer for this tower, built with That Open Engine, Three.js &amp; Vite &mdash; no plugin required.</p>
+                </div>
+            </div>
+            <div class="viewer-section">
+                <h3>Browser-based BIM Viewer</h3>
+
+                <iframe
+                    src="https://mahmoud684.github.io/RevageResidentialTower/"
+                    title="BIM Viewer"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="addins">
+    <div class="section-heading">
+        <span class="section-number">05</span>
+        <h2>Add-ins &amp; Automation</h2>
+    </div>
+    <div class="section-rule"></div>
 
     <div class="projects-grid">
 
         <div class="project-card">
-            <h3>NFPA Pipe Sizing Addin</h3>
-            <p>
-                Revit API C# add-in for automatic firefighting pipe sizing.
-            </p>
+            <div class="card-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <h3>NFPA Pipe Sizing Add-in</h3>
+            <p>Revit API C# add-in for automatic firefighting pipe sizing.</p>
         </div>
 
-        <div class="project-card">
+        <div class="project-card project-card-media">
+            <div class="card-icon"><i class="fa-solid fa-diagram-project"></i></div>
             <h3>Dynamo Support Placement</h3>
-            <p>
-                Automatic support placement.
-            </p>
-            <div id="videos">
+            <p>Automatic support placement.</p>
+
+            <div class="video-frame-shell">
                 <iframe class="drive-video-preview"
                     src="https://drive.google.com/file/d/1PYsD8beHwv9koXBpboBAKp9Xw0yVokFU/preview"
-                    width=100%
-                    height100%
                     allow="autoplay"
                     allowfullscreen
                     loading="lazy"
                     title="Dynamo Support Placement video preview">
                 </iframe>
-                
+                <button type="button" class="fullscreen-btn" data-video-src="https://drive.google.com/file/d/1PYsD8beHwv9koXBpboBAKp9Xw0yVokFU/preview" data-video-title="Dynamo Support Placement">
+                    <i class="fa-solid fa-expand"></i> Fullscreen
+                </button>
             </div>
-
-            
         </div>
 
         <div class="project-card">
+            <div class="card-icon"><i class="fa-solid fa-link"></i></div>
             <h3>Batch Link Manager</h3>
-            <p>
-                Revit automation for managing links and worksets.
-            </p>
+            <p>Revit automation for managing links and worksets.</p>
         </div>
 
     </div>
-
 </section>
 
 <section id="gallery">
-    <h2>Project Photos</h2>
+    <div class="section-heading">
+        <span class="section-number">06</span>
+        <h2>Project Photos</h2>
+    </div>
+    <div class="section-rule"></div>
+
     <div class="gallery">
         <iframe class="drive-preview"
             src="https://drive.google.com/file/d/1Azb7aFeofYbKA900gaKzazUi3iJuA49w/preview"
@@ -188,171 +360,109 @@
 </section>
 
 <section id="videos">
-
-    <h2>Videos</h2>
+    <div class="section-heading">
+        <span class="section-number">07</span>
+        <h2>Videos</h2>
+    </div>
+    <div class="section-rule"></div>
 
     <div class="video-grid">
-         <iframe
-            src="https://drive.google.com/file/d/17R2HPrYa71OYiH3TW-SHpdoiB55Qw2MF/preview"
-            width="640"
-            height="360"
-            allow="autoplay"
-            allowfullscreen
-            style="border:0; border-radius:12px;">
-        </iframe>
-         <iframe
-            src="https://drive.google.com/file/d/1x2iqy4QjC8R_O9p508VRX_LivTy3GZxG/preview"
-            width="640"
-            height="360"
-            allow="autoplay"
-            allowfullscreen
-            style="border:0; border-radius:12px;">
-         </iframe>
-          <iframe
-            src="https://drive.google.com/file/d/1PYsD8beHwv9koXBpboBAKp9Xw0yVokFU/preview"
-            width="640"
-            height="360"
-            allow="autoplay"
-            allowfullscreen
-            style="border:0; border-radius:12px;">
-          </iframe>
-          <iframe
-            src="https://drive.google.com/file/d/1-TICC_4Q-I6AKo4-oUbGk7CD0Tbsfuob/preview"
-            width="640"
-            height="360"
-            allow="autoplay"
-            allowfullscreen
-            style="border:0; border-radius:12px;">
-          </iframe>
-        
 
-        
+        <div class="video-frame-shell">
+            <iframe
+                src="https://drive.google.com/file/d/17R2HPrYa71OYiH3TW-SHpdoiB55Qw2MF/preview"
+                allow="autoplay"
+                allowfullscreen
+                loading="lazy"
+                title="Project video 1">
+            </iframe>
+            <button type="button" class="fullscreen-btn" data-video-src="https://drive.google.com/file/d/17R2HPrYa71OYiH3TW-SHpdoiB55Qw2MF/preview" data-video-title="Project video">
+                <i class="fa-solid fa-expand"></i> Fullscreen
+            </button>
+        </div>
+
+        <div class="video-frame-shell">
+            <iframe
+                src="https://drive.google.com/file/d/1x2iqy4QjC8R_O9p508VRX_LivTy3GZxG/preview"
+                allow="autoplay"
+                allowfullscreen
+                loading="lazy"
+                title="Project video 2">
+            </iframe>
+            <button type="button" class="fullscreen-btn" data-video-src="https://drive.google.com/file/d/1x2iqy4QjC8R_O9p508VRX_LivTy3GZxG/preview" data-video-title="Project video">
+                <i class="fa-solid fa-expand"></i> Fullscreen
+            </button>
+        </div>
+
+        <div class="video-frame-shell">
+            <iframe
+                src="https://drive.google.com/file/d/1PYsD8beHwv9koXBpboBAKp9Xw0yVokFU/preview"
+                allow="autoplay"
+                allowfullscreen
+                loading="lazy"
+                title="Dynamo Support Placement video">
+            </iframe>
+            <button type="button" class="fullscreen-btn" data-video-src="https://drive.google.com/file/d/1PYsD8beHwv9koXBpboBAKp9Xw0yVokFU/preview" data-video-title="Dynamo Support Placement">
+                <i class="fa-solid fa-expand"></i> Fullscreen
+            </button>
+        </div>
+
+        <div class="video-frame-shell">
+            <iframe
+                src="https://drive.google.com/file/d/1-TICC_4Q-I6AKo4-oUbGk7CD0Tbsfuob/preview"
+                allow="autoplay"
+                allowfullscreen
+                loading="lazy"
+                title="Project video 4">
+            </iframe>
+            <button type="button" class="fullscreen-btn" data-video-src="https://drive.google.com/file/d/1-TICC_4Q-I6AKo4-oUbGk7CD0Tbsfuob/preview" data-video-title="Project video">
+                <i class="fa-solid fa-expand"></i> Fullscreen
+            </button>
+        </div>
 
     </div>
-
 </section>
 
 <section id="contact">
+    <div class="section-heading section-heading-center">
+        <span class="section-number">08</span>
+        <h2>Contact</h2>
+    </div>
+    <div class="section-rule"></div>
 
-    <h2>Contact</h2>
+    <p class="lead center">Open to new opportunities and collaborations &mdash; reach out any time.</p>
 
     <div class="contact-buttons">
-
-    <a class="whatsapp-btn"
-       href="https://wa.me/201284316187"
-       target="_blank">
-       <i class="fa-brands fa-whatsapp"></i>
-       WhatsApp 
-    </a>
-
-    <a class="email-btn"
-       href="mailto:mahmoud.ibraheem456@gmail.com">
-       <i class="fa-solid fa-envelope"></i>
-       Email 
-    </a>
-
-</div>
-
-</section>
-<section class="project-section" id="Sampels">
-
-    <div class="project-card">
-
-        <div class="project-image">
-
-            <img src="assets/images/Rivage.jpg"
-                 alt="Rivage Residential Tower">
-
-            <div class="project-badge">
-                BIM PROJECT
-            </div>
-
-        </div>
-
-        <div class="project-content">
-
-            <h3>Rivage Residential Tower</h3>
-
-            <p class="project-subtitle">
-                MEP Technical Office & BIM Coordination
-            </p>
-
-            <p class="project-description">
-                Residential high-rise tower project involving
-                BIM coordination, shop drawings, consultant
-                coordination, clash detection, material
-                submittals and technical office management.
-            </p>
-
-            <div class="project-info">
-
-                <div class="info-item">
-                    <span>Discipline</span>
-                    <strong>MEP</strong>
-                </div>
-
-                <div class="info-item">
-                    <span>Tools</span>
-                    <strong>Revit + Navisworks</strong>
-                </div>
-
-                <div class="info-item">
-                    <span>Type</span>
-                    <strong>Residential Tower</strong>
-                </div>
-
-            </div>
-
-            <div class="project-buttons">
-
-                <a href="https://autode.sk/4y2QYGS"
-                   target="_blank"
-                   class="btn btn-viewer">
-
-                    <i class="fas fa-cube"></i>
-                    View 3D Model
-
-                </a>
-
-
-                <a href="https://github.com/MAHMOUD684/Portfolio-Models/releases/download/V1/Lower.Ground.Floor-.Federated.Model.nwd"
-                   target="_blank"
-                   class="btn btn-download">
-
-                    <i class="fas fa-download"></i>
-                    Download NWD
-
-                </a>
-
-            </div>
-            <div class="project-buttons">
-
-                <a href="https://autode.sk/4uZKu8Z"
-                   target="_blank"
-                   class="btn btn-viewer">
-
-                    <i class="fas fa-cube"></i>
-                    Appatement with MEP Sample
-
-                </a>
-            </div>
-
-        </div>
-                <a href="https://github.com/MAHMOUD684/Portfolio-Models/releases/download/V1/1BR-T1C.nwd
-"
-                   target="_blank"
-                   class="btn btn-download">
-
-                    <i class="fas fa-download"></i>
-                    Download NWD
-
-                </a>    
-</div>
-
+        <a class="whatsapp-btn" href="https://wa.me/201284316187" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a class="email-btn" href="mailto:mahmoud.ibraheem456@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Email
+        </a>
+    </div>
 </section>
 
+</main>
 
+<footer>
+    <div class="footer-inner">
+        <span>&copy; <span id="year"></span> Mahmoud Magdy &mdash; MEP &amp; BIM Engineer</span>
+        <span class="footer-rev">END OF SHEET SET &middot; REV AUG 2026</span>
+    </div>
+</footer>
 
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Video player">
+    <div class="video-modal-content">
+        <button type="button" class="video-modal-close" id="videoModalClose" aria-label="Close video">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <iframe id="videoModalIframe" class="video-modal-iframe" src="" allow="autoplay" allowfullscreen title="Video player"></iframe>
+    </div>
+</div>
 
 <script src="script.js"></script>
 
